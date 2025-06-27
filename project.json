@@ -1,0 +1,14 @@
+{
+    "version": "0.1.0",
+    "description": "Python automation app for uploading tradeshow leads from Excel to Hubspot, updating/creating contacts, enrolling in workflows, creating deals, validating results, and reporting errors in Excel.",
+    "main": "app.py",
+    "scripts": {
+        "start": "python app.py"
+    },
+    "dependencies": [
+        "pandas",
+        "openpyxl",
+        "requests",
+        "tk"
+    ]
+}
