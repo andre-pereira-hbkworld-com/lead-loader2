@@ -10,6 +10,8 @@ load_dotenv()
 HUBSPOT_ACCESS_TOKEN = os.getenv('HUBSPOT_ACCESS_TOKEN', 'YOUR_HUBSPOT_ACCESS_TOKEN')
 HUBSPOT_BASE_URL = 'https://api.hubapi.com'
 REQUESTS_VERIFY = False  # Disable SSL verification for testing
+st.write("Token loaded:", bool(HUBSPOT_ACCESS_TOKEN and HUBSPOT_ACCESS_TOKEN != 'YOUR_HUBSPOT_ACCESS_TOKEN'))
+st.write("Token preview:", HUBSPOT_ACCESS_TOKEN[:6] if HUBSPOT_ACCESS_TOKEN else "None")
 
 def hubspot_headers():
     return {
